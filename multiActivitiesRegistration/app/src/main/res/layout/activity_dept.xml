@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".deptActivity">
+
+    <RadioGroup
+        android:id="@+id/radioGrpDept"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:checkedButton="@id/radioButtonCS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioButtonCS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/computerScienceLabel" />
+
+        <RadioButton
+            android:id="@+id/radioButtonSIS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/SISLabel" />
+
+        <RadioButton
+            android:id="@+id/radioButtonBINF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/binfLabel" />
+
+        <RadioButton
+            android:id="@+id/radioButtonDS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/DSLabel" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/cancelLabel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSelect"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/selectLabel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

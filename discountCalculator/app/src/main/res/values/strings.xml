@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">discountCalculator</string>
+    <string name="ticketPriceLabel">Ticket Price:</string>
+    <string name="textBoxHint">Enter Ticket Price</string>
+    <string name="discountLabel">Discount:</string>
+    <string name="radioButtonLabel5">5%</string>
+    <string name="radioButtonLabel10">10%</string>
+    <string name="radioButtonLabel15">15%</string>
+    <string name="radioButtonLabel20">20%</string>
+    <string name="radioButtonLabel50">50%</string>
+    <string name="discountPriceLabel">Discounted Price:</string>
+    <string name="calculateButtonLabel">Calculate</string>
+    <string name="clearButtonLabel">Clear</string>
+</resources>

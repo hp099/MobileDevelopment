@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/harsh/OneDrive - University of North Carolina at Charlotte/Spring 2022/ITCS 4180 -091 (Mobile App Dev)/AndroidStudio/multiActivitiesRegistration/app/src/main/res/layout/activity_dept.xml" value="0.36302083333333335" />
+        <entry key="..\:/Users/harsh/OneDrive - University of North Carolina at Charlotte/Spring 2022/ITCS 4180 -091 (Mobile App Dev)/AndroidStudio/multiActivitiesRegistration/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/Users/harsh/OneDrive - University of North Carolina at Charlotte/Spring 2022/ITCS 4180 -091 (Mobile App Dev)/AndroidStudio/multiActivitiesRegistration/app/src/main/res/layout/activity_profile.xml" value="0.36302083333333335" />
+        <entry key="..\:/Users/harsh/OneDrive - University of North Carolina at Charlotte/Spring 2022/ITCS 4180 -091 (Mobile App Dev)/AndroidStudio/multiActivitiesRegistration/app/src/main/res/layout/activity_regist.xml" value="0.36302083333333335" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">multiActivitiesRegistration</string>
+    <string name="welcomeMessage">Welcome!</string>
+    <string name="registerLabel">Register</string>
+    <string name="nameLabel">Name:</string>
+    <string name="emailLabel">Email:</string>
+    <string name="idLabel">ID:</string>
+    <string name="deptLabel">Dept:</string>
+    <string name="enterNameLabel">Enter Name</string>
+    <string name="enterEmailLabel">Enter Email</string>
+    <string name="enterID">Enter ID</string>
+    <string name="selectLabel">Select</string>
+    <string name="submitLabel">Submit</string>
+    <string name="computerScienceLabel">Computer Science</string>
+    <string name="SISLabel">Software Info. Systems</string>
+    <string name="binfLabel">Bioinformatics</string>
+    <string name="DSLabel">Data Science</string>
+    <string name="cancelLabel">cancel</string>
+</resources>

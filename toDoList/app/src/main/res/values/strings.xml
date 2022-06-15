@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">toDoList</string>
+    <string name="taskNum">0</string>
+    <string name="upcomingTasks">Upcoming Tasks</string>
+    <string name="taskName">None</string>
+    <string name="PriorityText">High</string>
+    <string name="DateOutput" />
+    <string name="ViewTaskButtonLabel">View Tasks</string>
+    <string name="createTaskButtonLabel">Create A Task</string>
+    <string name="taskInfoLabel">Task Information</string>
+    <string name="nameAskLabel">Name:</string>
+    <string name="dateAskLabel">Date:</string>
+    <string name="priorityAskLabel">Priority:</string>
+    <string name="cancelLabel">Cancel</string>
+    <string name="deleteLabel">Delete</string>
+    <string name="TaskNameLabel">Task Name</string>
+    <string name="setDateLabel">Set Date</string>
+    <string name="highLabel">High</string>
+    <string name="mediumLabel">Medium</string>
+    <string name="lowLabel">Low</string>
+    <string name="createLabel">Create</string>
+</resources>

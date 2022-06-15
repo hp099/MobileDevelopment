@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewBillTotalLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/billTotalLabel"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextBill"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/editTextHint"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewBillTotalLabel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTipLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tipLabel"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/radioGrpTip"
+        app:layout_constraintStart_toStartOf="@+id/textViewBillTotalLabel"
+        app:layout_constraintTop_toTopOf="@+id/radioGrpTip" />
+
+    <RadioGroup
+        android:id="@+id/radioGrpTip"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:checkedButton="@id/radioBtn10"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewTipLabel"
+        app:layout_constraintTop_toBottomOf="@+id/editTextBill">
+
+        <RadioButton
+            android:id="@+id/radioBtn10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:text="@string/percent10" />
+
+        <RadioButton
+            android:id="@+id/radioBtn15"
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/percent15" />
+
+        <RadioButton
+            android:id="@+id/radioBtn18"
+            android:layout_width="71dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/percent18" />
+
+        <RadioButton
+            android:id="@+id/radioBtnCustom"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:text="@string/percentCustom" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewCustomLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/percentCustom"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewTipLabel"
+        app:layout_constraintTop_toBottomOf="@+id/radioGrpTip" />
+
+    <SeekBar
+        android:id="@+id/seekBarCustomTip"
+        android:layout_width="0dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="8dp"
+        android:max="@integer/maxCustomtip"
+        android:progress="@integer/defaultCustomTip"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewCustomLabel"
+        app:layout_constraintEnd_toStartOf="@+id/textViewSeekBarVal"
+        app:layout_constraintStart_toEndOf="@+id/textViewCustomLabel"
+        app:layout_constraintTop_toTopOf="@+id/textViewCustomLabel" />
+
+    <TextView
+        android:id="@+id/textViewSeekBarVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/percent40"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/seekBarCustomTip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/seekBarCustomTip" />
+
+    <TextView
+        android:id="@+id/textViewTipOutLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/tipOutLabel"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewCustomLabel"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarCustomTip" />
+
+    <TextView
+        android:id="@+id/textViewTotalLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/totalLabel"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewTipOutLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTipOutLabel" />
+
+    <TextView
+        android:id="@+id/textViewTipOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/zeroDollar"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewTipOutLabel"
+        app:layout_constraintStart_toEndOf="@+id/textViewTipOutLabel"
+        app:layout_constraintTop_toTopOf="@+id/textViewTipOutLabel" />
+
+    <TextView
+        android:id="@+id/textViewTotalOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/zeroDollar"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewTotalLabel"
+        app:layout_constraintStart_toEndOf="@+id/textViewTotalLabel"
+        app:layout_constraintTop_toTopOf="@+id/textViewTotalLabel" />
+
+    <TextView
+        android:id="@+id/textViewSplitLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/splitByLabel"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewTotalLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTotalLabel" />
+
+    <RadioGroup
+        android:id="@+id/radioGrpSplit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/radioBtnSplit1"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewSplitLabel"
+        app:layout_constraintTop_toTopOf="@+id/textViewSplitLabel">
+
+        <RadioButton
+            android:id="@+id/radioBtnSplit1"
+            android:layout_width="67dp"
+            android:layout_height="wrap_content"
+            android:text="@string/labelOne" />
+
+        <RadioButton
+            android:id="@+id/radioBtnSplit2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/labelTwo" />
+
+        <RadioButton
+            android:id="@+id/radioBtnSplit3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/labelThree" />
+
+        <RadioButton
+            android:id="@+id/radioBtnSplit4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/labelFour" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewTotalPersonLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/totalPersonLabel"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewSplitLabel"
+        app:layout_constraintTop_toBottomOf="@+id/radioGrpSplit" />
+
+    <TextView
+        android:id="@+id/textViewPerPersonOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/zeroDollar"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewTotalPersonLabel"
+        app:layout_constraintTop_toTopOf="@+id/textViewTotalPersonLabel" />
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/labelClear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTotalPersonLabel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

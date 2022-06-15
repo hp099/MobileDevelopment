@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">GoogleDirections</string>
+    <string name="start">Start:</string>
+    <string name="end">End:</string>
+    <string name="reset">Reset</string>
+    <string name="getDirections">Get Directions</string>
+    <string name="gas">Gas</string>
+    <string name="restaurant">Restaurant</string>
+</resources>

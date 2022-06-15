@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">toDoListFragments</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nameLabel">Name:</string>
+    <string name="taskNameLabel">Task Name</string>
+    <string name="setDateLabel">Set Date</string>
+    <string name="dateLabel">Date:</string>
+    <string name="priorityLabel">Priority:</string>
+    <string name="highLabel">High</string>
+    <string name="mediumLabel">Medium</string>
+    <string name="lowLabel">Low</string>
+    <string name="cancelLabel">Cancel</string>
+    <string name="submitCreate">Submit</string>
+    <string name="taskInfoLabel">Task Information</string>
+    <string name="deleteLabel">Delete</string>
+    <string name="taskNumLabel">You have 0 tasks</string>
+    <string name="upTask">Upcoming Tasks</string>
+    <string name="noneLabel">None</string>
+    <string name="viewTaskLabel">View Task</string>
+    <string name="createTaskLabel">Create A Task</string>
+</resources>
